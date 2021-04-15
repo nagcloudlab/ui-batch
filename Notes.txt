@@ -1,0 +1,107 @@
+
+
+
+------------------------------------------------------------------
+why we need javascript language?
+------------------------------------------------------------------
+
+ => client-side (dynamic web-ui) application   : browser runtime
+ => sever-side application                     : node.js runtime
+
+
+
+------------------------------------------------------------------
+javascript features
+------------------------------------------------------------------
+
+
+=> developer flexibility
+
+    -> OOP & FP
+    -> dynamic 
+
+
+=> by default, all IO operations are non-blocking/asynchrnous
+=> by default, single-threaded process / light-weight process
+   but can execute concurrent actions due to non-blocking IO  
+
+------------------------------------------------------------------
+
+
+
+
+------------------------------------------------------------------
+javascript standarnd
+------------------------------------------------------------------
+
+=> ECMAScript spec
+
+    current version: ECMAScript-2015 or ES6 ....
+                     
+
+------------------------------------------------------------------
+
+
+------------------------------------------------------------------
+How to run javascript program ?
+------------------------------------------------------------------
+
+
+=> using javascript runtime/engine
+
+
+client ( browser ) envi :
+--------------------------
+
+    a. chrome  => v8 (c++ project )
+    b. firefox => rhino / spider-monkey  ( java )
+    c. IE/Edge => chakra
+    d. safari  => nitro
+
+
+other envi :
+--------------------------
+
+    a. Node.js => v8
+    b. JVM     => rhino / Nashorn
+
+
+
+
+
+------------------------------------------------------------------
+//  Hello World
+------------------------------------------------------------------
+
+
+
+
+-----------------------------------
+Naming conventions
+-----------------------------------
+
+keywords ==> lower-case
+Types ( class/constructor ) ==> pascal-case : A____B___C___  e.g JavaEmployee
+variables/functions ==> camel-case : ____B____C____ e.g studName, addNumbers()
+constant number values     ==> upper-case , e.g const PI=3.14  
+file-names          ==> pascal-case,lower-case , data-types.js
+
+-------------------------------------------------------------------
+
+
+
+
+
+------------------------------------------------------------------
+//  core javascript : level-1 topics
+------------------------------------------------------------------
+
+ => basic data types
+ => literal-style objects 
+ => scopes / execution-context  ( how code executes )
+ 
+ => FP ( imp topic ) , arrow-function ( es6 )
+ => OOP  ( less imp )
+ => data structures ( list/array , set ( es6 )  , map ( es6 ))
+
+-----------------------------------------------------------------
