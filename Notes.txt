@@ -101,6 +101,7 @@ file-names          ==> pascal-case,lower-case , data-types.js
  => scopes / execution-context  ( how code executes )
  
  => FP ( imp topic ) , arrow-function ( es6 )
+ 
  => OOP  ( less imp )
  => data structures ( list/array , set ( es6 )  , map ( es6 ))
 
