@@ -5,7 +5,7 @@ console based todo application
 
 data model
 -------------
-
+    
     todo = {id:number,title:string,completed:boolean,createdAt:date,updatedAt:date}
 
 
