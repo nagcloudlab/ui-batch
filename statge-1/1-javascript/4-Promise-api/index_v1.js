@@ -1,10 +1,8 @@
 
 
-
 //-----------------------------------
 // Trainer
 //-----------------------------------
-
 const trainer = {
     getSubjectSync() {
         // 10s
@@ -14,11 +12,9 @@ const trainer = {
         const promise = new Promise((resolve, reject) => {
             setTimeout(() => {
                 console.log("");
-
                 // console.log("trainer resolving promise..")
                 // const subject = "Subject-1"
                 // resolve(subject)// push
-
                 console.log("trainer rejecting promise..")
                 const error = 'ooops'
                 reject(error)
@@ -28,13 +24,9 @@ const trainer = {
         return promise;
     }
 }
-
-
 //-----------------------------------
 // E-Learing
 //-----------------------------------
-
-
 const eLearing = {
     getSubjectAync() {
         const promise = new Promise((resolve, reject) => {
@@ -54,22 +46,18 @@ const eLearing = {
         return promise;
     }
 }
-
-
 //-----------------------------------
 // Employee
 //-----------------------------------
 
 const employee1 = {
     doLearnAndWorkV1() {
-
         // step-1
         console.log("step-1");
         console.log("employee request subject on trainer...")
         const subject = trainer.getSubjectSync() // pull / blocking / sync
         console.log("employee got subject from trainer");
         console.log("employee recting/learning sub : " + subject);
-
         // step-2
         console.log("");
         console.log("step-2");
