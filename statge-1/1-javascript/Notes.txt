@@ -5,28 +5,27 @@
 why we need javascript language?
 ------------------------------------------------------------------
 
- => client-side (dynamic web-ui) application   : browser runtime
- => sever-side application                     : node.js runtime
+    => client-side (dynamic web-ui) application  : runtime ( browser )
+    => sever-side application                    : runtime ( Node.js )  
 
+------------------------------------------------------------------ 
 
 
 ------------------------------------------------------------------
 javascript features
 ------------------------------------------------------------------
 
+=> flexibility
+    - dynamic
+    - FP & OOP    
 
-=> developer flexibility
-
-    -> OOP & FP
-    -> dynamic 
-
-
+browser / Node.js
+-----------------    
 => by default, all IO operations are non-blocking/asynchrnous
-=> by default, single-threaded process / light-weight process
+=> by default, single-threaded process / light-weight process,
    but can execute concurrent actions due to non-blocking IO  
 
 ------------------------------------------------------------------
-
 
 
 
@@ -34,46 +33,41 @@ javascript features
 javascript standarnd
 ------------------------------------------------------------------
 
-=> ECMAScript spec
+=> ECMAScript community
+    - specs
 
-    current version: ECMAScript-2015 or ES6 ....
+    current version: ECMAScript-2015 or ES6
                      
 
 ------------------------------------------------------------------
+
 
 
 ------------------------------------------------------------------
 How to run javascript program ?
 ------------------------------------------------------------------
 
-
 => using javascript runtime/engine
-
 
 client ( browser ) envi :
 --------------------------
 
-    a. chrome  => v8 (c++ project )
-    b. firefox => rhino / spider-monkey  ( java )
+    a. chrome  => v8 ( c++ )
+    b. firefox => rhino ( java ) / spider monkey
     c. IE/Edge => chakra
-    d. safari  => nitro
+    d. Safari  => Nitro
 
 
 other envi :
 --------------------------
 
-    a. Node.js => v8
-    b. JVM     => rhino / Nashorn
-
-
-
-
+    a. Node.js => v8 ( c++ )
+    b. JVM     => rhino / nashorn
+    ...
 
 ------------------------------------------------------------------
 //  Hello World
 ------------------------------------------------------------------
-
-
 
 
 -----------------------------------
@@ -81,14 +75,12 @@ Naming conventions
 -----------------------------------
 
 keywords ==> lower-case
-Types ( class/constructor ) ==> pascal-case : A____B___C___  e.g JavaEmployee
+Types ( class ) ==> pascal-case : A____B___C___  e.g JavaEmployee
 variables/functions ==> camel-case : ____B____C____ e.g studName, addNumbers()
 constant number values     ==> upper-case , e.g const PI=3.14  
 file-names          ==> pascal-case,lower-case , data-types.js
 
 -------------------------------------------------------------------
-
-
 
 
 
@@ -98,45 +90,64 @@ file-names          ==> pascal-case,lower-case , data-types.js
 
  => basic data types
  => literal-style objects 
- => scopes / execution-context  ( how code executes )
- 
+ => scopes / execution-context  ( how code execuytes )
  => FP ( imp topic ) , arrow-function ( es6 )
- 
  => OOP  ( less imp )
  => data structures ( list/array , set ( es6 )  , map ( es6 ))
 
 -----------------------------------------------------------------
 
+------------------------------------------------------------------
+//  javascript : level-2 topics
+------------------------------------------------------------------
+
+=> Es6 New-syntax & New APIs 
+    => spread operators
+    => de-structuring
+    => symbols
+    => iterables & generator functions`
+    => for-of loop
+    ........
+=> modules
+=> package management tools : NPM / YARN
 
 
 
 
-javascript ,
+------------------------------------------------------------------
+//  javascript : level-3 topics
+------------------------------------------------------------------
 
-by default ,
+Async/Non-blocking Programming
+-----------------------------
 
-==> all IO operations are non-blocking
-==> single-threaded process , can execute concurrent action due to non-blocking IO
-
-
-
-browser envi  e.g chrome
-
- 1. javascript runtime/engine  ( v8 -> c++ ) : based on ECMAScript spec
-
-    - single-stack => to execute functions
-    - heap         => to keep objects 
-
- 2. browser web-apis ( e.g DOM, Timer, XHR/Fetch , MultiMedia, Storage ,...)   : based on w3c spec 
-
- 3. Event/Message/Callback Queue
-
- 4. Event-Loop
+=> promise api
+=> reactive programming with javascript
+=> Unit-Testing  : JEST 
 
 
+------------------------------------------------------------------
+How to use javascript with HTML & CSS ?  ( front end )
+--------------------------------------------------------
+
+    -> browser apis
+    -> react.js  => facebook javascript lib 
+
+
+How to use javascript with server-side appln ?  ( back end )
+--------------------------------------------------------
+
+    -> Node.js apis
+    -> Express.js  =>  strongloop/IBM lib 
 
 
 
 
+datasources
+-----------------------------------------------------------
 
+    -> mySQL
+    -> MongoDB
 
+devops tools
+------------------------------------------------------------    

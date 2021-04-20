@@ -66,7 +66,7 @@ class TodoService {
             if (!next.completed)
                 return acc + 1
             else
-                return acc + 0;
+                return acc;
         }, 0)
         console.log(todoLeft);
     }
