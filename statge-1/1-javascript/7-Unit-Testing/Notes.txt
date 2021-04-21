@@ -1,0 +1,25 @@
+---------------------------------------------------------------------------
+How to do automated unit-testing?
+---------------------------------------------------------------------------
+
+ with 3 steps
+ -------------------------
+
+    step-1 : Arrange
+    step-2 : Act
+    step-3 : Assert
+
+
+how to implement these steps?
+
+using Unit-Testing Framework
+
+for javascript based applications ,
+
+
+jasmine -> https://jasmine.github.io/
+mocha   -> https://mochajs.org/
+Ava     -> https://github.com/avajs/ava
+jest    -> https://jestjs.io/
+
+---------------------------------------------------------------------------
