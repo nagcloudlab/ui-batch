@@ -105,23 +105,38 @@ const top5TodosBtn = document.getElementById('top5-todos-btn')
 const todosTableBody = document.getElementById('todos-table-body')
 const progressMessage = document.getElementById('progress-message')
 
-top5TodosBtn.addEventListener('click', async (e) => {
+top5TodosBtn.addEventListener('click', (e) => {
     //..
     const url = "https://jsonplaceholder.typicode.com/todos";
     progressMessage.innerText = "loading todos..."
-    let response = await fetch(url)
-    let todos = await response.json()
-    progressMessage.innerText = ""
-    const top5Todos = todos.slice(0, 5)
-    const todoRows = top5Todos.map(todo => {
-        let { id, title, completed } = todo
-        return `
-            <tr>
-                <td>${id}</td>
-                <td>${title}</td>
-                <td>${completed}</td>
-            </tr>
-        `
+    let promise = fetch(url, {
+        method: 'GET'
     })
-    todosTableBody.innerHTML = todoRows.join(" ")
+    promise
+        .then(response => {
+            return response.json()
+        })
+        .then(todos => {
+            progressMessage.innerText = ""
+            const top5Todos = todos.slice(0, 5)
+            const todoRows = top5Todos.map(todo => {
+                let { id, title, completed } = todo
+                return `
+                    <tr>
+                        <td>${id}</td>
+                        <td>${title}</td>
+                        <td>${completed}</td>
+                    </tr>
+                `
+            })
+            todosTableBody.innerHTML = todoRows.join(" ")
+        })
+        .catch(err => {
+            progressMessage.innerText = err.message
+        })
 })
+
+
+
+
+// axios package = xhr + promise 
