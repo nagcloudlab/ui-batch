@@ -23,8 +23,8 @@
     -------------
      -> can create,retreive,update and delete HTML elements
      -> can change element's inner content
-     -> can change element's attributes/properties
      -> can change element's style
+     -> can change element's attributes/properties
      -> can listen events on element(s)
      -> can validate form-field before submit
      -> can create rich ui components like calendar,auto complete fields...
@@ -33,7 +33,7 @@
     -----------------
      -> can perform any actions on timeout/time-interval
 
-    using XHR/Fetch Api
+    using XHR ( XMLHttpRequest ) / Fetch Api
     -------------------
      -> can send HTTP-request async to api-server.
 
