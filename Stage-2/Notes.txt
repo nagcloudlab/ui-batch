@@ -1,0 +1,42 @@
+
+
+------------------------------------------
+ What is UI ?
+------------------------------------------
+
+ ui     => data + style + intractivity
+ web-ui => html + css   + javascript
+
+ ------------------------------------------
+
+ why we need javascript in HTML-page ?
+
+
+    using browser provided apis, 
+    javascript programs can do any dynamic actions
+
+    browser apis ==> w3c recommendations, implemented natively
+
+    e.g ==> DOM,Timer, XHR/fetch , .....
+    
+    using DOM Api
+    -------------
+     -> can create,retreive,update and delete HTML elements
+     -> can change element's inner content
+     -> can change element's attributes/properties
+     -> can change element's style
+     -> can listen events on element(s)
+     -> can validate form-field before submit
+     -> can create rich ui components like calendar,auto complete fields...
+
+    using Timer Api
+    -----------------
+     -> can perform any actions on timeout/time-interval
+
+    using XHR/Fetch Api
+    -------------------
+     -> can send HTTP-request async to api-server.
+
+
+
+
