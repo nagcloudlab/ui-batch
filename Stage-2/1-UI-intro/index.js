@@ -1,6 +1,4 @@
 
-
-
 //-----------------------------------------
 // using DOM Api
 //-----------------------------------------
@@ -21,7 +19,6 @@ hideBtn.addEventListener('click', event => {
 showBtn.addEventListener('click', event => {
     box1.style.display = 'block'
 })
-
 
 //-----------------------------------------
 // using DOM + Timer Api
@@ -53,8 +50,6 @@ startBtn.addEventListener('click', e => {
         stopBtn.disabled = true
     })
 })
-
-
 
 // //-----------------------------------------
 // // using DOM + XHR  Api
@@ -136,7 +131,3 @@ top5TodosBtn.addEventListener('click', (e) => {
         })
 })
 
-
-
-
-// axios package = xhr + promise 
