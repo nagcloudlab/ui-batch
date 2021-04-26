@@ -1,0 +1,22 @@
+
+
+
+body{
+    background-color: blue;
+}
+
+@media screen and (min-width:500px) and (orientation:portrait) {
+    body{
+        background-color: green;
+    }
+}
+@media screen and (min-width:500px) and (orientation:landscape) {
+    body{
+        background-color: rgb(128, 141, 128);
+    }
+}
+@media screen and (min-width:1000px) {
+    body{
+        background-color: red;
+    }
+}
