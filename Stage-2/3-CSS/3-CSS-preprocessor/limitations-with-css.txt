@@ -1,0 +1,24 @@
+
+
+------------------------------------------------------------------------------------
+  limitations with css
+------------------------------------------------------------------------------------
+
+  => css files difficult to maintain for large web-sites
+
+        i.e
+
+        no variables
+        no arithmatic
+        no functions
+        no mixins i,e re-usability
+        no Nested styles
+
+
+  solutions:
+
+     => use css-pre-processors
+        e.g LESS,SASS, Stylush,.. 
+
+
+------------------------------------------------------------------------------------

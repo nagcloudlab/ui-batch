@@ -1,0 +1,63 @@
+
+// variables
+
+@width: 20px;
+@height: @width + 10px;
+
+
+#header {
+    width: @width;
+    height: @height;
+}
+
+// mixins
+.bordered() {
+    border-top: dotted 1px black;
+    border-bottom: solid 2px black;
+}
+
+#menu a{
+    .bordered();
+    color: #111;
+} 
+.post a {
+    .bordered();
+    color: red;
+}
+
+
+// Nested CSS
+#header {
+    color: black;
+    .navigation {
+        font-size: 12px;
+    }
+    .logo {
+        width: 300px;
+    }
+}
+
+
+.component {
+    width: 300px;
+    @media (min-width: 768px) {
+      width: 600px;
+      @media  (min-resolution: 192dpi) {
+        background-image: url(/img/retina2x.png);
+      }
+    }
+    @media (min-width: 1280px) {
+      width: 800px;
+    }
+  }
+
+
+@base: #f04615;
+@width: 0.5;
+
+.class {
+  width: percentage(@width); // returns `50%`
+  color: saturate(@base, 5%);
+  background-color: spin(lighten(@base, 25%), 8);
+}
+

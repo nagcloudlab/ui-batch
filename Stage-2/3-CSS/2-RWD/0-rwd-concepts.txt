@@ -1,0 +1,50 @@
+
+
+
+-------------------------------------------------------
+RWD guide-lines
+-------------------------------------------------------
+
+
+1. Flexible  Layouts
+
+
+    --------------------------------
+    Flexible Layouts / grids
+    --------------------------------
+
+
+    Responsive Web Design Formula
+    (target / context) x 100 = result%
+
+    e.g
+
+    (340/538)*100 = 63.197026%
+
+
+
+    recommended
+    --------------
+
+        => flexbox
+        => grid
+
+
+2. use Media Queries to apply styles
+
+3. Mobile First approach
+
+4. Flexible Media-content ( images , video )
+
+
+
+---------------------------------------------------------------------------------------------
+RWD css frameworks
+---------------------------------------------------------------------------------------------
+
+    
+    -> bootstrap
+    -> bulma
+
+
+    
