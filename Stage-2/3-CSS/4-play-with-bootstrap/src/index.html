@@ -5,183 +5,200 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>play-with-bootstrap</title>
+    <title>shop-IT</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <nav class="navbar navbar-light bg-info mb-5">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">play-with-bootstrap</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+            <a class="navbar-brand" href="#">shop-IT</a>
         </div>
     </nav>
 
-    <div class="mt-4">
-        <div class="container">
-            <div class="card">
-                <div class="card-body">
-                    play-with-bootstrap
+    <hr />
+    <div class="container">
+        <span class="badge bg-secondary">2</span> item(s) in cart
+    </div>
+    <hr />
+
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Orders</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Login</a>
+            </li>
+        </ul>
+    </div>
+
+    <hr />
+
+
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>S-No</th>
+                    <th>Item</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Laptop</td>
+                    <td>1</td>
+                    <td>&#8377;149000</td>
+                    <td>&#8377;149000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mobile</td>
+                    <td>1</td>
+                    <td>&#8377;19000</td>
+                    <td>&#8377;19000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Other</td>
+                    <td>1</td>
+                    <td>&#8377;0</td>
+                    <td>&#8377;0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="container">
+        <div class="list-group">
+            <div class="list-group-item">
+                <div class="row">
+                    <div class="col-3">
+                        <img class="img-fluid" src="./images/Laptop.jpeg" alt="" />
+                    </div>
+                    <div class="col-9">
+                        <div>Laptop</div>
+                        <div>&#8377;149000</div>
+                        <button class="btn btn-dark">buy</button>
+                        <div class="mt-2">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Description</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Specification</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Reviews</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div>New Mac Pro</div> -->
+                        <!-- <div>Not Yet</div> -->
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-header">Review Form</div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label>Who:</label>
+                                                <input class="form-control" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Stars:</label>
+                                                <select class="form-control">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Message</label>
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                            <button class="btn btn-dark brn-sm">submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item">
+                <div class="row">
+                    <div class="col-3">
+                        <img class="img-fluid" src="./images/Mobile.jpeg" alt="" />
+                    </div>
+                    <div class="col-9">
+                        <div>Mobile</div>
+                        <div>&#8377;19000</div>
+                        <div>New Mob Pro</div>
+                        <button class="btn btn-dark">buy</button>
+                        <div class="mt-2">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Description</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Specification</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Reviews</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div>New Mac Pro</div> -->
+                        <!-- <div>Not Yet</div> -->
+                        <div>
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="alert alert-danger" role="alert">
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        &mdash; who1
+                                        <hr />
+                                        <div>sample review-1</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="alert alert-danger" role="alert">
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        &mdash; who2
+                                        <hr />
+                                        <div>sample review-2</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <div class="container mt-4">
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, corrupti? Odit temporibus, vel magnam
-                tenetur sint
-                numquam repellat aperiam dolorem praesentium nulla, recusandae unde aut consequuntur ab voluptatum!
-                Dicta,
-                illum.
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, corrupti? Odit temporibus, vel magnam
-                tenetur sint
-                numquam repellat aperiam dolorem praesentium nulla, recusandae unde aut consequuntur ab voluptatum!
-                Dicta,
-                illum.
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, corrupti? Odit temporibus, vel magnam
-                tenetur sint
-                numquam repellat aperiam dolorem praesentium nulla, recusandae unde aut consequuntur ab voluptatum!
-                Dicta,
-                illum.
-            </div>
-        </div>
-
-        <div class="row mt-4">
-            <div class="col-4 offset-md-4">
-                🙋‍♂️
-            </div>
-        </div>
-
-    </div>
-
-    <div class="container mt-4">
-        <button class="btn btn-primary btn-lg">button-1</button>
-        <button class="btn btn-primary btn-lg">button-2</button>
-    </div>
-
-    <div class="container mt-4 d-md-block">
-
-        <div class="row">
-            <div class="col-md-4">
-                <img class="img-fluid" src="https://avatars.githubusercontent.com/u/7052900?v=4" />
-            </div>
-            <div class="col-md-4">
-                <img class="img-fluid" src="https://avatars.githubusercontent.com/u/7052900?v=4" />
-            </div>
-            <div class="col-md-4">
-                <img class="img-fluid" src="https://avatars.githubusercontent.com/u/7052900?v=4" />
-            </div>
-        </div>
-
-    </div>
-
-    <div class="container mt-4">
-
-        <div class="table-responsive">
-
-            <table class="table table-bordered table-sm table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
     </div>
 
 
