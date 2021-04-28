@@ -1,5 +1,5 @@
 {
-  "name": "dynamic-web-ui",
+  "name": "todos-web-ui",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,6 +20,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "bootstrap": "^4.6.0"
   }
 }
