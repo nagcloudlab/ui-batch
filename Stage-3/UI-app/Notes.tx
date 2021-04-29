@@ -1,0 +1,82 @@
+
+
+
+
+complexities while using plain-javascript with browser apis
+-------------------------------------------------------------
+
+
+=> browser compataibility issues ( reference:  caniuse.com )
+=> performance issues shoud care manually ( by keeping minimal by DOM access )
+=> memory issues shoud care manually      ( remove un-used DOM elements from memory )
+=> too much code
+=> code oraganization is bad              ( view & mode/data must be loosely coupled )
+=> data-binding is manual 
+
+
+------------------------------------
+legacy solution:
+------------------------------------
+
+
+    => use server-side page rendering technologies
+
+        e.g JSP,ASP,PHP,........
+
+
+    limitations with server-side-page technologies:
+
+        => on every request, server should re-construct same page with new content,
+           by keeping client's state    
+        => on every request, server transferting page with same css,js,images,fonts,...
+           leads to n/w b/w issue
+        => on every page response, browser re-loads current page with new
+
+
+
+----------------------------------------------------
+modern solution using client-side page technologies:
+----------------------------------------------------
+
+
+how ?
+
+
+    => browser improved lot, + .js language improved lot by syntax , apis
+
+       +
+
+    => using third-party's javascript's Lib & Frameworks   
+
+
+---------------------------------------------------------------
+
+
+    
+    => jQuery
+
+        -> DOM + XHR utility lib
+
+
+
+    MVC based javascript lib & F.W
+    -------------------------------
+
+    -> backbone.js
+    -> knockout.js
+    -> Ember.js
+    -> dojo
+    -> ext.js from sencha ( commercial )    
+    -> Angular.js from google
+
+
+
+    Component based web ui
+    --------------------------------
+
+    -> React.js from facebook
+    -> Angular from google
+    -> Vue.js
+
+   
+   
