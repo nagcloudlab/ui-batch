@@ -1,0 +1,136 @@
+
+
+limitations with current UI
+------------------------------
+
+    => Lot of duplicate code
+    => Not satisfying 'open-closed' principle
+    => View and code , tightly coupled
+    => NO re-usability
+
+
+solution-1 : using MVC arch
+
+    MVC ( Model View Controller )
+
+                for web-ui, MVC based frameworks
+
+                    - knockout.js
+                    - ember.js
+                    - backbone.js
+                    - dojo
+                    - extjs
+                    - AngularJS 1.x from google
+
+
+
+    limitations with MVC arhc
+
+    => can't predict data flow b/w model and view due to 2-way binding
+    => difficult to debug
+    => no re-usable UI fragments
+
+
+
+solution-2 : using component arch                
+
+
+   what is component ?
+
+      - any UI-fragment with single-responsibility
+
+      e.g  search,calandar,.....
+
+
+
+   --------------------------------------------------
+
+   is HTML based on component-arch ?
+
+   - yes
+
+   --------------------------------------------------
+
+
+   principles of component(s)
+   --------------------------
+
+
+    -> must have single-responsibility
+      => -- smaller & simpler  => easy to manage
+
+
+      <Clock/>, <h1/>  , <header/>
+
+    -> must be loose-coupled from other   
+       => easy to re-use  
+
+
+       <Clock/>  <----->  <Wall/>
+
+    -> can customize via props / attributes 
+      => based on req..
+
+        <Clock timeZone="Asia/Kolkata"/>
+        <Clock timeZone="Asia/Dubai"/>
+    
+
+   -> can hold state if requied 
+
+      e.g
+
+      <hr/>
+
+      <input/>  e.g value
+
+    -> if state changes, comp must re-render  
+
+    -> parent -> child  via props
+      child  -> parent via events
+      i.e uni-directional data-flow 
+
+
+      e.google
+
+        <parent>
+            <child1>
+            <child1>
+        </parent>   
+
+        <Wall>
+            <Clock prop1="" prop2="" onAlarm="handler()"/>
+            <Clock prop1="" prop2="" onAlarm="handler()"/>
+        </Wall> 
+
+
+
+
+
+how to create custom UI components ?
+
+
+
+UI-component = data + style + behav
+               html + css + javascript
+
+2 ways
+
+  way-1 : using HTML web-component apis
+
+
+
+            - Template
+            - Shadow/private DOM
+            - CustomElements   e.g <Clock/>
+
+            
+  way-3 : using third-party's component based javascript lib & F.Ws  ( recommended )
+
+
+          -> react.js from facebook : v17
+          -> angular                : v9
+          -> Vue.js
+
+
+
+
