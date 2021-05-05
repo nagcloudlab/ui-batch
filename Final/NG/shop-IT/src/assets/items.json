@@ -1,0 +1,18 @@
+[
+    {
+      "name": "Laptop",
+      "price": 249000,
+      "currencyType": "INR",
+      "description": "New Mac pro",
+      "canBuy": true,
+      "image": "assets/Laptop.jpeg"
+    },
+    {
+      "name": "Mobile",
+      "price": 49000,
+      "currencyType": "INR",
+      "description": "New pro",
+      "canBuy": true,
+      "image": "assets/Mobile.jpeg"
+    }
+  ]

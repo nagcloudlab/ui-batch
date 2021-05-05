@@ -1,0 +1,11 @@
+<div class="container">
+
+  <app-navbar [title]="title"></app-navbar>
+  
+  <app-cart-badge></app-cart-badge>
+  <hr/>
+  <div *ngFor="let itemData of items" class="list-group-item">
+    <app-item [value]="itemData" (buy)="addToCart($event)"></app-item>
+  </div>
+
+</div>
